@@ -18,12 +18,17 @@ public class ProductNameStepDefinition {
 	}
 	@When("Je clique sur Products")
 	public void jeCliqueSurProducts() {
+		ProductNamePage.getbntProduct().click();
 	}
+	
 	@When("Je saisis le nom du produit {string}")
 	public void jeSaisisLeNomDuProduit(String string) {
+		ProductNamePage.getProductName().sendKeys("parfum");
 	}
+	
 	@When("Je clique sur le bouton search")
 	public void jeCliqueSurLeBoutonSearch() {
+		ProductNamePage.getSearch();
 	}
 
 }

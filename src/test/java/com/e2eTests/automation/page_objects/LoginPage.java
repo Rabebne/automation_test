@@ -7,8 +7,7 @@ import org.openqa.selenium.support.How;
 import com.e2eTests.automation.utils.BasePage;
 import com.e2eTests.automation.utils.Setup;
 
-
-public class LoginPage extends BasePage{
+public class LoginPage extends BasePage {
 
 	/* Retrieve element */
 	@FindBy(how = How.ID, using = "Email")
@@ -19,9 +18,10 @@ public class LoginPage extends BasePage{
 
 	@FindBy(how = How.XPATH, using = "//button[@type='submit']")
 	private static WebElement btnLogin;
-	
+
 	public LoginPage() {
 		super(Setup.getDriver());
+
 	}
 
 	public static WebElement getEmail() {

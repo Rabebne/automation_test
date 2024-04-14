@@ -20,7 +20,7 @@ import static io.cucumber.junit.CucumberOptions.SnippetType.CAMELCASE;
 					plugin = {"pretty", "html:target/cucumber-report.html"}, 
 					tags = ("@productName"), 
 					//glue = {"step_definitions"}, 
-					monochrome = false,
+					monochrome = true,
 					snippets = CAMELCASE
 
 )

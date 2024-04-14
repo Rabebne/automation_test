@@ -15,37 +15,43 @@ public class LoginStepDefinition {
 		loginPage = new LoginPage();
 	}
 
-	/* login valid */
-	@Given("Je visite l'application NopCommerce")
+	/* Login valid */
+
+	@Given("je visite l'application NopCommerce")
 	public void jeVisiteLApplicationNopCommerce() {
 		Setup.getDriver().get("https://admin-demo.nopcommerce.com/login?ReturnUrl=%2Fadmin%2F");
+
 	}
 
-	@When("Je saisis l'adresse mail {string}")
+	@When("je saisis l'adresse mail {string}")
 	public void jeSaisisLAdresseMail(String email) {
 		LoginPage.getEmail().clear();
 		LoginPage.getEmail().sendKeys(email);
+
 	}
 
-	@When("Je saisis le login {string}")
+	@When("je saisis le login {string}")
 	public void jeSaisisLeLogin(String login) {
 		LoginPage.getPassword().clear();
 		LoginPage.getPassword().sendKeys(login);
 	}
 
-	@When("Je clique sur le bouton Login")
+	@When("je clique sur le bouton login")
 	public void jeCliqueSurLeBoutonLogin() {
 		LoginPage.getBtnLogin().click();
+
 	}
 
-	@Then("Je me redirige vers la page home")
+	@Then("je me redirige vers la page home")
 	public void jeMeRedirigeVersLaPageHome() {
+
 	}
 
-	/* login invalid */
-	@Then("Je verifie le message d'erreur")
-	public void jeVerifieLeMessageDErreur() {
+	/* Login invalid */
+
+	@Then("je verifie le mzssage d'erreur")
+	public void jeVerifieLeMzssageDErreur() {
+
 	}
-	
 
 }
